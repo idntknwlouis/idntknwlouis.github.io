@@ -2,12 +2,14 @@
   /* Important */
   --indicator-border-size: 2px;
   --indicator-border-style: solid;
-  --indicator-rounding: 0;
-  --round-messages-radius: 8px;
 
-    /* Less Important */
+  /* Less Important */
   --less-indicator-border-size: 2px;
   --less-indicator-border-style: solid;
+
+  /* Both */
+  --indicator-rounding: 0;
+  --round-messages-radius: 8px;
 }
 
 .theme-light {
