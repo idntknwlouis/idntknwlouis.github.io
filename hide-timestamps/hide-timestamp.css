@@ -1,0 +1,10 @@
+/* Hide Message Timestamps unless you hover over a message Config */
+[class*="timestampInline_"],
+[class*="timezone-message-item"] {
+    visibility: hidden; /* opacity: 0; */ /* <--- change to this if you like fadein/out anim */
+    /* transition: opacity 0.25s ease; */ /* remove the "/" and "*" from both ends to add the anim */
+}
+[class*="messageListItem_"]:hover [class*="timestampInline_"],
+[class*="messageListItem_"]:hover [class*="timezone-message-item"]{
+    visibility: visible; /* opacity: 1; <--- change to this if you like fadein/out anim */
+}
