@@ -3,7 +3,7 @@ This is where i pretty much host some of the files...
 ## Hide Timestamps
 **Hide message timestamps until you hover**
 - https://idntknwlouis.github.io/hide-timestamps/hide-timestamps.css
-**Original By [Kodarru](https://github.com/Kodarru)**
+**Original By [Kodarru](https://github.com/Kodarru) + [Error430](https://github.com/Err0r430)**
 
 ## Modern Indicatiors
 **Mordernize the look of Discord**
