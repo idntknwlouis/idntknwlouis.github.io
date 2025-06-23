@@ -1,9 +1,31 @@
 /* Hide Message Timestamps unless you hover over a message */
+[class*=vc-reply-timestamp]  {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  will-change: max-width, margin;
+  transition: max-width var(--reply-timestamp-transition) cubic-bezier(0.34, 1.56, 0.64, 1), 
+              margin var(--reply-timestamp-transition) cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[class*=repliedMessage]:hover > [class*=vc-reply-timestamp] {
+  max-width: 20ch;
+  margin-right: .3ch;
+  /* Prevents it from triggering if you just quickly mouseover :D */
+  transition-delay: 0.08s;
+}
+
+:root {
+ --message-timestamp-transition: .25s; /* <--- change to a number >0s to add the transition :] */
+ --reply-timestamp-transition: .7s;                   /* <--- same goes here */
+}
+
 [class*="timestampInline_"],
 [class*="timezone-message-item"],
 [class*="timestampVisibleOnHover_"] {
     opacity: 0;
-    transition: opacity var(--timestamp-transition) ease;
+    transition: opacity var(--message-timestamp-transition) ease;
 }
 [class*="message_"]:hover [class*="timestampInline_"],
 [class*="messageListItem_"]:hover [class*="timestampInline_"],
