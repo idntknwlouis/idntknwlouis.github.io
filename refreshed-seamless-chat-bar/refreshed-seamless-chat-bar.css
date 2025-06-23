@@ -1,9 +1,9 @@
 /**
  * @name Refreshed Seamless Chat Bar
  * @author louis
- * @version 1.1.0
- * @description Moves around elements near the Chat Bar to be seamless with the message bar
- * @source https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css
+ * @version 1.0.0
+ * @description Original by NSPG911. Moves around elements near the Chat Bar to be seamless with the message bar.
+ * @source https://idntknwlouis.github.io/refreshed-seamless-chat-bar/refreshed-seamless-chat-bar.css
 */
 
 :root {
@@ -11,7 +11,7 @@
     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
     /* Whether you want the chat to not move up *\
     \*    and down when someone starts typing   */
-    --rscb-no-jump-chat: 0;
+    --rscb-no-jump-chat: 1;
     /* Whether you want the messages to clip through *\
     \*  the gap between slowmode and typing people   */
     --rscb-clip-chat-through-typing-bar: 0;
@@ -90,14 +90,11 @@
   
 }
 
-.messagesWrapper__36d07:not(
-    :has(+ .formWithLoadedChatInput_f75fb0 > .typing_b88801)
-  )
 .scrollerSpacer__36d07 {
     height: calc(24px + 8px);
   }
 .scrollerContent__36d07 {
-  padding-bottom: calc(var(--rscb-no-jump-chat) * 25px);
+  padding-bottom: calc(var(--rscb-no-jump-chat) * 15px);
   }
 .scrollerInner__36d07 {
   padding-bottom: calc(var(--rscb-clip-chat-through-typing-bar) * 25px);
