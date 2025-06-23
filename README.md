@@ -13,4 +13,4 @@ https://idntknwlouis.github.io/modern-indicators/modern-indicators.css
 ## Refreshed Seamless Char bar
 **Because the new one suck**
 https://idntknwlouis.github.io/refreshed-seamless-chat-bar/refreshed-seamless-chat-bar.css
-### Original by [NSPC911](https://github.com/NSPC911)
+**Original by [NSPC911](https://github.com/NSPC911)**
